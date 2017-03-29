@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MongoDB.Driver;
-using UsersWebApi.Controllers;
-using UsersWebApi.Model;
-using UsersWebApi.Interfaces;
 using UsersWebApi.Data;
+using UsersWebApi.Interfaces;
+using UsersWebApi.Model;
 
 namespace UsersWebApi
 {

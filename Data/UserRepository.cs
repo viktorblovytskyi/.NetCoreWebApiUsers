@@ -7,6 +7,7 @@ using MongoDB.Bson;
 using UsersWebApi.Model;
 using UsersWebApi.Interfaces;
 using Microsoft.Extensions.Options;
+using System.Diagnostics;
 
 namespace UsersWebApi.Data
 {
@@ -32,7 +33,9 @@ namespace UsersWebApi.Data
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
         }
 
@@ -46,7 +49,9 @@ namespace UsersWebApi.Data
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return users;
@@ -67,7 +72,9 @@ namespace UsersWebApi.Data
             }
             catch(Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return user;
@@ -81,7 +88,9 @@ namespace UsersWebApi.Data
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return null;
@@ -100,7 +109,9 @@ namespace UsersWebApi.Data
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return null;
@@ -121,7 +132,9 @@ namespace UsersWebApi.Data
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return null;
@@ -139,7 +152,9 @@ namespace UsersWebApi.Data
             }
             catch(Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return null;
@@ -163,7 +178,9 @@ namespace UsersWebApi.Data
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                #if DEBUG
+                Debug.WriteLine(e.Message);
+                #endif
             }
 
             return null;
